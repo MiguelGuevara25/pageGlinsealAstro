@@ -1,13 +1,13 @@
 ---
-import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Photos from "../components/Photos.astro";
 import Partners from "../components/Partners.astro";
 import Contact from "../components/Contact.astro";
 import Footer from "../components/Footer.astro";
-import mockup2 from "../img/celular-mockup.webp";
-import mockup1 from "../img/celularmockup2.webp";
+import AppMobile from "../components/AppMobile.astro";
+import InfoRFID from "../components/InfoRFID.astro";
+import CarouselClients from "../components/CarouselClients.astro";
 ---
 
 <Layout title="Glinseal">
@@ -83,108 +83,11 @@ import mockup1 from "../img/celularmockup2.webp";
         </div>
       </div>
 
-      <!-- PHOTOS -->
-
       <Photos />
-
-      <!-- PARTNERS -->
 
       <Partners />
 
-      <!-- COUNTERS 1 -->
-
-      <div class="page-section grey-light-bg clearfix">
-        <div class="fes7-img-cont col-md-6">
-          <div
-            class="fes7-img"
-            style="background-image: url(images/personarfid.png)"
-          >
-          </div>
-        </div>
-
-        <div class="container">
-          <div
-            class="row"
-            style="padding-top: 80px; padding-bottom: 80px; padding-left: 250px"
-          >
-            <div class="col-md-8 col-md-offset-6 fes7-text-cont">
-              <h1
-                class="section-title"
-                style="border-left: white 2px solid; color: white"
-              >
-                ¿QUE ES LA
-                <span class="bold" style="color: white">TECNOLOGÍA RFID</span>?
-              </h1>
-
-              <p class="mb-60" style="color: white">
-                RFID es un sistema de identificación de productos similar a los
-                códigos de barras tradicionales pero que tiene grandes ventajas.
-                A diferencia de los códigos de barras, que utilizan imágenes
-                para identificar etiquetas adheridas a los productos, RFID
-                utiliza ondas de radio para comunicarse con chips electrónicos,
-                que pueden montarse en una gran cantidad de medios, como
-                etiquetas o rótulos. un transpondedor. Quizás no lo sepas, pero
-                en tu vida diaria puede que utilices un sistema con tecnología
-                RFID.
-              </p>
-            </div>
-
-            <div class="col-md-8 col-md-offset-6 fes7-text-cont">
-              <h1
-                class="section-title"
-                style="border-left: white 2px solid; color: white"
-              >
-                ¿COMO FUNCIONA LA
-                <span class="bold" style="color: white">
-                  TECNOLOGÍA RFID?
-                </span>?
-              </h1>
-
-              <p style="color: white">
-                Las soluciones RFID incluyen antenas RFID, lectores RFID
-                (transceptores) y etiquetas RFID (etiquetas RF). Dependiendo del
-                tamaño del almacén y su configuración, puede ser necesario
-                instalar arcos de escaneo o puertas RFID. A medida que pasan las
-                mercancías, la antena detecta el Tag o etiqueta inteligente y
-                emite una señal al lector para autenticar la información
-                contenida en la etiqueta. El lector a su vez envía la
-                información al sistema central del cliente (ERP), donde los
-                datos se actualizan inmediatamente. Los datos se transmiten de
-                forma segura, minimizando posibles errores.
-              </p>
-            </div>
-          </div><!--end of row-->
-        </div>
-      </div>
-
-      <!-- WORK PROCESS 1 -->
-
-      <div id="work-process-link" class="page-section">
-        <div class="container fes4-cont">
-          <div class="row">
-            <div class="col-md-7">
-              <div class="mb-50">
-                <h2 class="section-title">
-                  ¿QUÉ ES UN PRECINTO DE ALTA SEGURIDAD <span class="bold"
-                    >RFID DE 3 ESTADOS</span
-                  >?
-                </h2>
-              </div>
-              <p class="mb-50">
-                Es un marchamo que combina el alto nivel de seguridad mecánica
-                ofrecido por ISO17712: cumplimiento de 2013 con la seguridad de
-                la transmisión electrónica RFID UHF para tener una identiﬁcación
-                de serie unívoca imposible de replicar.
-              </p>
-            </div>
-            <div class="col-md-4">
-              <img src="/images/precintos3rfid.png" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- VIDEO ADS 1 -->
+      <InfoRFID />
 
       <div class="page-section video-ads-bg">
         <div class="container">
@@ -194,93 +97,14 @@ import mockup1 from "../img/celularmockup2.webp";
         </div>
       </div>
 
-      <!-- FEATURES 9 -->
-      <div id="app-glinseal" class="page-section p-80-cont">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="mt-60 mb-80">
-                <h2 class="section-title">
-                  APP MOBILE<br />
-                  <span class="bold">GLINSEAL</span>
-                </h2>
-              </div>
-              <div class="row">
-                <div class="col-md-6 col-sm-6">
-                  <div class="fes7-box mb-20 wow fadeIn">
-                    <div class="fes7-box-icon">
-                      <div class="icon icon-basic-mixer2"></div>
-                    </div>
-                    <h3>SEGURIDAD</h3>
-                  </div>
-                </div>
+      <AppMobile />
 
-                <div class="col-md-6 col-sm-6">
-                  <div class="fes7-box mb-20 wow fadeIn" data-wow-delay="200ms">
-                    <div class="fes7-box-icon">
-                      <div class="icon icon-basic-lightbulb"></div>
-                    </div>
-                    <h3>TRAZABILIDAD</h3>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-md-6 col-sm-6">
-                  <div class="fes7-box mb-20 wow fadeIn" data-wow-delay="400ms">
-                    <div class="fes7-box-icon">
-                      <div class="icon icon-basic-helm"></div>
-                    </div>
-                    <h3>ANÁLISIS EN TIEMPO REAL</h3>
-                  </div>
-                </div>
-
-                <div class="col-md-6 col-sm-6">
-                  <div class="fes7-box mb-20 wow fadeIn" data-wow-delay="600ms">
-                    <div class="fes7-box-icon">
-                      <div class="icon icon-basic-settings"></div>
-                    </div>
-                    <h3>RAPIDEZ DE ACCIÓN</h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6 fes9-img-cont clearfix">
-              <div class="fes9-img-center clearfix">
-                <div class="fes9-img-center">
-                  <Image
-                    src={mockup1}
-                    alt="caca"
-                    class="wow fadeInUp"
-                    data-wow-delay="450ms"
-                    data-wow-duration="1s"
-                    loading="lazy"
-                  />
-
-                  <Image
-                    src={mockup2}
-                    alt="caca2"
-                    class="wow fadeInUp"
-                    data-wow-delay="450ms"
-                    data-wow-duration="1s"
-                    loading="lazy"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- CALL TO ACTION  -->
       <!-- <div class="port-view-more-cont-dark">
         <a class="port-view-more-dark" href="contact.html"
           >CONTÁCTANOS Y DESCARGA LA APP <i class="fa fa-download"></i></a
         >
       </div> -->
 
-      <!-- BLOG 2 -->
       <!-- <div id="blog-link" class="page-section pt-110-b-30-cont">
         <div class="container">
           <div class="mb-50">
@@ -392,46 +216,7 @@ import mockup1 from "../img/celularmockup2.webp";
         </div>
       </div> -->
 
-      <!-- NEWS LETTER -->
-      <div id="clients" class="page-section nl-cont">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 nl-form-container clearfix">
-              <div id="owl-clients" class="owl-carousel our-clients-cont">
-                <div class="item">
-                  <img
-                    src="images/Logo SUNAT FINAL - Junior.png"
-                    alt="client"
-                  />
-                </div>
-
-                <div class="item">
-                  <img
-                    src="images/logo-hse-seal-final-junior.webp"
-                    alt="client"
-                  />
-                </div>
-
-                <div class="item">
-                  <img src="images/Logo E+ FINAL - Junior.png" alt="client" />
-                </div>
-
-                <div class="item">
-                  <img src="images/Logo SAT FINAL - Junior.png" alt="client" />
-                </div>
-
-                <div class="item">
-                  <img src="images/logo-indeco-junior.webp" alt="client" />
-                </div>
-
-                <div class="item">
-                  <img src="images/Logo Multimodal - Junior.png" alt="client" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <CarouselClients />
 
       <div class="page-section p-110-cont">
         <div class="container">
