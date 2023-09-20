@@ -65,12 +65,26 @@ import NavLinks from "./NavLinks.astro";
   <div id="index-link" class="sm-video-bg">
     <div class="container sm-content-cont text-center js-height-fullscr">
       <div class="sm-video-wrapper">
-        <div class="sm-video"></div>
+        <!-- <div class="sm-video"></div> -->
+        <div class="sm-videos">
+          <video
+            muted
+            autoplay
+            playsinline
+            id="video_background"
+            preload="auto"
+            loop="true"
+            style="position: absolute; inset: 0px 0px 0px -600px; z-index: -100; width: 2000px; height: 1100px;"
+          >
+            <source src="video/sm-video.mp4" type="video/mp4" />
+          </video>
+        </div>
       </div>
 
       <div class="sm-cont-middle">
         <div class="font-white light-72-wide sm-mb-15 sm-mt-20 relative">
-          SISTEMA DE TRACKING <br/> <span class="bold">GLINSEAL</span>
+          SISTEMA DE TRACKING <br />
+          <span class="bold">GLINSEAL</span>
         </div>
 
         <div class="font-white norm-40-wide hide-0-736 sm-mb-50 relative">
@@ -79,7 +93,7 @@ import NavLinks from "./NavLinks.astro";
       </div>
     </div>
     <div class="local-scroll-cont font-white">
-      <a href="#about" class="scroll-down smooth-scroll">
+      <a href="#info" class="scroll-down smooth-scroll">
         <div class="icon icon-arrows-down"></div>
       </a>
     </div>
