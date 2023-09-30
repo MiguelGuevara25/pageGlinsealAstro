@@ -1,0 +1,23 @@
+---
+const { urlDirect } = Astro.props;
+const { nombreImg } = Astro.props;
+const { txtPartner } = Astro.props;
+---
+
+<div class="row">
+  <div class="col-xs-12 col-sm-5 col-md-5">
+    <div class="fes8-box wow fadeIn">
+      <a href={urlDirect} target="_blank">
+        <img src={nombreImg} loading="lazy" />
+      </a>
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-sm-7 col-md-7">
+    <div class="fes8-box wow fadeIn">
+      <p>
+        {txtPartner}
+      </p>
+    </div>
+  </div>
+</div>
